@@ -21,6 +21,7 @@ public class EmployeeController {
     @GetMapping("/list")
     public ResponseEntity<List<Employee>> listEmployee() {
         List<Employee> employee = employeeService.listEmployee();
+        System.out.println("comit branch develop");
         return  ResponseEntity.status(HttpStatus.OK).body(employee);
     }
 }
